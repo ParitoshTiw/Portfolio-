@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paritosh Tiwari | Semiconductors, Chip Design & VLSI | JECRC University</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Portfolio of Paritosh Tiwari — B.Tech ECE undergraduate specializing in Semiconductors & Chip Design (VLSI) at JECRC University. Creator of KrishiSetu." />
+  <meta name="keywords" content="Paritosh Tiwari, Semiconductors, VLSI, Chip Design, ECE, JECRC University, KrishiSetu, C Language, German A2" />
+  <meta name="author" content="Paritosh Tiwari" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Minimalist Ambient Glow -->
+  <div class="ambient-glow"></div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-zinc-950/80 dark:bg-zinc-950/80 light:bg-white/80 border-b border-zinc-800/80 transition-colors">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Logo / Name -->
+      <a href="#hero" class="flex items-center gap-2.5 group">
+        <span class="font-display font-bold text-base text-zinc-100 dark:text-zinc-100 group-hover:text-sky-400 transition-colors">
+          Paritosh Tiwari
+        </span>
+        <span class="text-xs font-mono text-zinc-500 hidden sm:inline">
+          / ECE &bull; VLSI
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-400">
+        <a href="#about" class="hover:text-zinc-100 transition-colors">About</a>
+        <a href="#academics" class="hover:text-zinc-100 transition-colors">Academics</a>
+        <a href="#skills" class="hover:text-zinc-100 transition-colors">Skills</a>
+        <a href="#project" class="hover:text-zinc-100 transition-colors">KrishiSetu</a>
+        <a href="#interests" class="hover:text-zinc-100 transition-colors">Interests</a>
+        <a href="#contact" class="hover:text-zinc-100 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Items: Theme Toggle & Connect -->
+      <div class="flex items-center gap-3">
+        <!-- Theme Switcher -->
+        <button id="themeToggle" aria-label="Toggle Theme" class="p-2 rounded-lg border border-zinc-800 bg-zinc-900/60 text-zinc-400 hover:text-zinc-100 hover:border-zinc-700 transition-all">
+          <i data-lucide="sun" id="sunIcon" class="w-4 h-4 hidden"></i>
+          <i data-lucide="moon" id="moonIcon" class="w-4 h-4"></i>
+        </button>
+
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold bg-zinc-100 hover:bg-white text-zinc-950 transition-all">
+          <span>Get in Touch</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="md:hidden p-2 rounded-lg text-zinc-400 hover:text-white">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden border-b border-zinc-800 bg-zinc-950 px-5 py-4 space-y-3 text-sm font-medium text-zinc-400">
+      <a href="#about" class="block py-1 hover:text-white">About</a>
+      <a href="#academics" class="block py-1 hover:text-white">Academics & College</a>
+      <a href="#skills" class="block py-1 hover:text-white">Skills</a>
+      <a href="#project" class="block py-1 hover:text-white">KrishiSetu Project</a>
+      <a href="#interests" class="block py-1 hover:text-white">Hobbies & Interests</a>
+      <a href="#contact" class="block py-1 hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="pt-20 pb-16 sm:pt-28 sm:pb-24 max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="max-w-3xl space-y-6">
+        
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/70 text-xs font-mono text-zinc-300">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span>B.Tech ECE &bull; JECRC University, Jaipur</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-zinc-100 tracking-tight leading-[1.15]">
+          Engineering silicon, <br />
+          <span class="gradient-accent">chip design</span> & foundational systems.
+        </h1>
+
+        <!-- Bio / Introduction -->
+        <p class="text-zinc-400 text-base sm:text-lg leading-relaxed">
+          I am <strong class="text-zinc-100 font-semibold">Paritosh Tiwari</strong>, an engineering undergraduate in <span class="text-zinc-200">Electronics and Communication Engineering</span> with a specialization in <strong class="text-sky-400 font-medium">Semiconductors and Chip Design, VLSI</strong> at <span class="text-zinc-200">JECRC University</span>. Passionate about the physical layer of computing, solid-state physics, programming in <strong class="text-zinc-200 font-semibold">C</strong>, and developing solutions like <strong class="text-zinc-100 font-semibold">KrishiSetu</strong>.
+        </p>
+
+        <!-- Core Skill Pills -->
+        <div class="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-zinc-400">
+          <span class="px-3 py-1.5 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300">
+            Semiconductors &amp; VLSI
+          </span>
+          <span class="px-3 py-1.5 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300">
+            C Programming
+          </span>
+          <span class="px-3 py-1.5 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300">
+            Leadership
+          </span>
+          <span class="px-3 py-1.5 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300">
+            German (A2)
+          </span>
+          <span class="px-3 py-1.5 rounded-md bg-zinc-900 border border-zinc-800 text-zinc-300">
+            English (Fluent)
+          </span>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex flex-wrap items-center gap-4 pt-3">
+          <a href="#project" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold bg-sky-500 hover:bg-sky-400 text-zinc-950 transition-all">
+            <span>Read About KrishiSetu</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          
+          <button onclick="copyEmail()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium border border-zinc-800 hover:border-zinc-700 bg-zinc-900/60 text-zinc-300 hover:text-white transition-all">
+            <i data-lucide="copy" class="w-4 h-4 text-zinc-400"></i>
+            <span id="copyEmailText">Copy Email</span>
+          </button>
+        </div>
+
+        <!-- Social Links Strip -->
+        <div class="flex items-center gap-4 pt-3 text-zinc-500 text-xs font-mono">
+          <span>DIRECT LINKS:</span>
+          <a href="mailto:paritosh.tiwari@jecrcu.edu.in" class="hover:text-sky-400 transition-colors flex items-center gap-1">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i> Email
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors flex items-center gap-1">
+            <i data-lucide="linkedin" class="w-3.5 h-3.5"></i> LinkedIn
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition-colors flex items-center gap-1">
+            <i data-lucide="github" class="w-3.5 h-3.5"></i> GitHub
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 border-t border-zinc-800/80 max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        
+        <div class="md:col-span-4 space-y-2">
+          <span class="text-xs font-mono text-sky-400 uppercase tracking-wider">Background</span>
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+            About Me
+          </h2>
+        </div>
+
+        <div class="md:col-span-8 space-y-5 text-zinc-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            I am currently an undergraduate student pursuing my Bachelor of Technology in <strong class="text-zinc-100">Electronics and Communication Engineering</strong> at <strong class="text-zinc-100">JECRC University, Jaipur</strong>.
+          </p>
+          <p>
+            My academic and technical focus is centered on <strong class="text-sky-400 font-medium">Semiconductors, Chip Design, and VLSI</strong>. From the behavior of electrons in PN junctions and MOSFET switches to the architectural design of digital logic, I am fascinated by how microelectronics serve as the bedrock of all modern computation.
+          </p>
+          <p>
+            In tandem with hardware fundamentals, I prioritize writing structured systems code in the <strong class="text-zinc-100 font-semibold">C Language</strong>. I bring strong <strong class="text-zinc-100 font-semibold">leadership</strong> qualities to technical collaboration, and my multilingual proficiency in <strong class="text-zinc-100 font-semibold">English</strong>, <strong class="text-zinc-100 font-semibold">German (A2)</strong>, and <strong class="text-zinc-100 font-semibold">Hindi</strong> prepares me to engage with both local communities and global engineering teams.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Academics & University Section -->
+    <section id="academics" class="py-16 border-t border-zinc-800/80 max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        
+        <div class="md:col-span-4 space-y-2">
+          <span class="text-xs font-mono text-sky-400 uppercase tracking-wider">Education</span>
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+            Academic Track
+          </h2>
+        </div>
+
+        <div class="md:col-span-8">
+          <div class="modern-card p-6 sm:p-7 space-y-4">
+            
+            <div class="flex flex-wrap items-start justify-between gap-2 border-b border-zinc-800 pb-4">
+              <div>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-zinc-100">
+                  B.Tech in Electronics & Communication Engineering
+                </h3>
+                <div class="text-sky-400 text-sm font-medium mt-0.5">
+                  Specialization in Semiconductors & Chip Design (VLSI)
+                </div>
+                <div class="text-xs text-zinc-400 mt-1 flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span>JECRC University, Jaipur, Rajasthan</span>
+                </div>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-zinc-400">
+                2025 &ndash; 2029
+              </span>
+            </div>
+
+            <div class="space-y-2 text-xs font-mono text-zinc-400 pt-1">
+              <div class="text-zinc-300 font-semibold font-sans text-sm">Key Academic Areas &amp; Coursework:</div>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 text-zinc-400">
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i>
+                  <span>Semiconductor Physics &amp; Devices</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i>
+                  <span>Digital Logic Design &amp; Boolean Circuits</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i>
+                  <span>CMOS &amp; VLSI Principles</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sky-400"></i>
+                  <span>C Systems Programming</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 border-t border-zinc-800/80 max-w-5xl mx-auto px-5 sm:px-8">
+      <div class="space-y-3 mb-10">
+        <span class="text-xs font-mono text-sky-400 uppercase tracking-wider">Capabilities</span>
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+          Skills &amp; Competencies
+        </h2>
+        <p class="text-zinc-400 text-sm max-w-xl">
+          Core technical competencies, programming expertise, spoken languages, and leadership traits.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- 1. VLSI & Hardware -->
+        <div class="modern-card p-5 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="cpu" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-zinc-100 text-sm">VLSI &amp; Hardware</h3>
+            <p class="text-xs text-zinc-400 mt-0.5">Specialization focus</p>
+          </div>
+          <ul class="text-xs text-zinc-300 space-y-1.5 font-mono pt-1">
+            <li>&bull; Semiconductor Physics</li>
+            <li>&bull; Chip Design Basics</li>
+            <li>&bull; Digital Electronics</li>
+            <li>&bull; CMOS Fundamentals</li>
+          </ul>
+        </div>
+
+        <!-- 2. Software (C Language) -->
+        <div class="modern-card p-5 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="terminal" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-zinc-100 text-sm">Programming</h3>
+            <p class="text-xs text-zinc-400 mt-0.5">Systems code &amp; logic</p>
+          </div>
+          <ul class="text-xs text-zinc-300 space-y-1.5 font-mono pt-1">
+            <li>&bull; C Language</li>
+            <li>&bull; Memory &amp; Pointers</li>
+            <li>&bull; Algorithmic Thinking</li>
+            <li>&bull; Git Version Control</li>
+          </ul>
+        </div>
+
+        <!-- 3. Languages -->
+        <div class="modern-card p-5 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="globe" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-zinc-100 text-sm">Languages</h3>
+            <p class="text-xs text-zinc-400 mt-0.5">Multilingual fluency</p>
+          </div>
+          <ul class="text-xs text-zinc-300 space-y-1.5 font-mono pt-1">
+            <li>&bull; English (Fluent)</li>
+            <li>&bull; German (CEFR A2)</li>
+            <li>&bull; Hindi (Native)</li>
+            <li>&bull; Cross-Cultural Collab</li>
+          </ul>
+        </div>
+
+        <!-- 4. Leadership -->
+        <div class="modern-card p-5 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="users" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="font-semibold text-zinc-100 text-sm">Leadership</h3>
+            <p class="text-xs text-zinc-400 mt-0.5">Execution &amp; teamwork</p>
+          </div>
+          <ul class="text-xs text-zinc-300 space-y-1.5 font-mono pt-1">
+            <li>&bull; Project Leadership</li>
+            <li>&bull; Initiative &amp; Drive</li>
+            <li>&bull; Clear Communication</li>
+            <li>&bull; Strategic Problem Solving</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects Section: Purely KrishiSetu -->
+    <section id="project" class="py-16 border-t border-zinc-800/80 max-w-5xl mx-auto px-5 sm:px-8">
+      
+      <div class="space-y-3 mb-10">
+        <span class="text-xs font-mono text-sky-400 uppercase tracking-wider">Project Portfolio</span>
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+          Featured Project: KrishiSetu
+        </h2>
+        <p class="text-zinc-400 text-sm max-w-2xl">
+          An agricultural innovation addressing middleman exploitation in rural supply chains.
+        </p>
+      </div>
+
+      <!-- KrishiSetu Dedicated Detailed Feature Card -->
+      <div class="modern-card p-6 sm:p-9 space-y-6">
+        
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-zinc-800 pb-5">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 mb-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>Agritech Direct Marketplace</span>
+            </div>
+            <h3 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+              KrishiSetu <span class="text-zinc-500 font-normal text-xl">| कृषि सेतु</span>
+            </h3>
+          </div>
+          <span class="px-3 py-1 rounded-md text-xs font-mono bg-zinc-900 border border-zinc-800 text-zinc-300">
+            Founded &amp; Conceptualized by Paritosh Tiwari
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300 leading-relaxed">
+          
+          <!-- The Problem -->
+          <div class="space-y-2 bg-zinc-900/40 p-4 rounded-xl border border-zinc-800/80">
+            <h4 class="font-semibold text-zinc-100 flex items-center gap-1.5">
+              <i data-lucide="alert-circle" class="w-4 h-4 text-amber-400"></i>
+              <span>The Problem in Agriculture</span>
+            </h4>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              In traditional agricultural mandis, smallholder farmers often lose a major fraction of their harvest earnings to commission agents, brokers, and multi-layered intermediaries. Farmers are burdened with delayed payouts, unfair weighing charges, and distress sales due to lack of direct access to real buyers.
+            </p>
+          </div>
+
+          <!-- The KrishiSetu Solution -->
+          <div class="space-y-2 bg-zinc-900/40 p-4 rounded-xl border border-zinc-800/80">
+            <h4 class="font-semibold text-zinc-100 flex items-center gap-1.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>The KrishiSetu Solution</span>
+            </h4>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              <strong class="text-zinc-200 font-medium">KrishiSetu</strong> provides a direct platform allowing farmers to sell their agricultural produce directly to consumers, restaurants, and bulk buyers. By eliminating the middleman layer, the platform guarantees that farmers retain fair market prices while buyers receive verified, transparent produce.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Key Pillars -->
+        <div class="pt-2">
+          <h4 class="text-xs font-mono text-zinc-400 uppercase tracking-wider mb-3">Core Pillars of the Platform:</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div class="p-3 rounded-lg bg-zinc-900/80 border border-zinc-800">
+              <div class="font-semibold text-zinc-100">1. Zero Intermediaries</div>
+              <div class="text-zinc-400 mt-1">Direct buyer-to-farmer trade relationship with full transparency.</div>
+            </div>
+            <div class="p-3 rounded-lg bg-zinc-900/80 border border-zinc-800">
+              <div class="font-semibold text-zinc-100">2. Fair Market Benchmarking</div>
+              <div class="text-zinc-400 mt-1">Pricing linked to real mandi rates to prevent distress under-selling.</div>
+            </div>
+            <div class="p-3 rounded-lg bg-zinc-900/80 border border-zinc-800">
+              <div class="font-semibold text-zinc-100">3. Rural Accessibility</div>
+              <div class="text-zinc-400 mt-1">Simplified listing interface designed specifically for smallholder ease of use.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Meta Details -->
+        <div class="border-t border-zinc-800 pt-4 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-zinc-400">
+          <div class="flex items-center gap-2">
+            <span class="text-zinc-500">Skills Applied:</span>
+            <span class="text-zinc-300">Project Leadership &bull; Systems Architecture &bull; Problem Solving</span>
+          </div>
+          <div class="flex items-center gap-2 text-sky-400">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+            <span>Farmer Empowerment Focus</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Hobbies & Interests Section -->
+    <section id="interests" class="py-16 border-t border-zinc-800/80 max-w-5xl mx-auto px-5 sm:px-8">
+      
+      <div class="space-y-3 mb-10">
+        <span class="text-xs font-mono text-sky-400 uppercase tracking-wider">Beyond Engineering</span>
+        <h2 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+          Hobbies &amp; Personal Interests
+        </h2>
+        <p class="text-zinc-400 text-sm max-w-xl">
+          What engages my curiosity, focus, and energy outside of coursework and circuit labs.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <!-- Hobby 1: Reading Books -->
+        <div class="modern-card p-6 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="book-open" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-semibold text-zinc-100 text-base">Reading Books</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            I enjoy reading literature, histories of technology, biographies of inventors, and personal growth books. Reading provides broader perspective and reinforces disciplined thinking.
+          </p>
+        </div>
+
+        <!-- Hobby 2: Listening to Music / Songs -->
+        <div class="modern-card p-6 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="music" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-semibold text-zinc-100 text-base">Listening to Songs</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            Music is my essential catalyst for deep work and relaxation. Whether tackling complex engineering concepts or unwinding, listening to songs helps maintain creative flow.
+          </p>
+        </div>
+
+        <!-- Hobby 3: German Language A2 -->
+        <div class="modern-card p-6 space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
+            <i data-lucide="languages" class="w-4 h-4"></i>
+          </div>
+          <h3 class="font-semibold text-zinc-100 text-base">German (Deutsch A2)</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+            I am actively learning German (currently at CEFR A2 level). Germany and Central Europe represent major hubs in semiconductor manufacturing equipment and engineering research.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 border-t border-zinc-800/80 max-w-5xl mx-auto px-5 sm:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+        
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xs font-mono text-sky-400 uppercase tracking-wider">Communication</span>
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-zinc-100">
+            Let's Connect
+          </h2>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Feel free to reach out regarding academic research, semiconductor collaborations, KrishiSetu discussions, or student opportunities.
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs font-mono text-zinc-300">
+            <div class="p-3 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-between">
+              <span class="text-zinc-400">Email:</span>
+              <span class="text-zinc-100 select-all">paritosh.tiwari@jecrcu.edu.in</span>
+            </div>
+            <div class="p-3 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-between">
+              <span class="text-zinc-400">Campus:</span>
+              <span class="text-zinc-100">JECRC University, Jaipur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="md:col-span-7">
+          <div class="modern-card p-6 sm:p-7 space-y-4">
+            <h3 class="font-semibold text-zinc-100 text-base">Send a Direct Message</h3>
+            
+            <form id="contactForm" class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label for="name" class="block text-xs font-mono text-zinc-400 mb-1">Your Name</label>
+                  <input type="text" id="name" required placeholder="Name" class="w-full px-3 py-2 rounded-md bg-zinc-900 border border-zinc-800 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-sky-400" />
+                </div>
+                <div>
+                  <label for="email" class="block text-xs font-mono text-zinc-400 mb-1">Your Email</label>
+                  <input type="email" id="email" required placeholder="email@domain.com" class="w-full px-3 py-2 rounded-md bg-zinc-900 border border-zinc-800 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-sky-400" />
+                </div>
+              </div>
+
+              <div>
+                <label for="subject" class="block text-xs font-mono text-zinc-400 mb-1">Subject</label>
+                <input type="text" id="subject" required placeholder="Inquiry / Collaboration" class="w-full px-3 py-2 rounded-md bg-zinc-900 border border-zinc-800 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-sky-400" />
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-mono text-zinc-400 mb-1">Message</label>
+                <textarea id="message" rows="4" required placeholder="Write your message here..." class="w-full px-3 py-2 rounded-md bg-zinc-900 border border-zinc-800 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-sky-400"></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="w-full py-2.5 px-4 rounded-md text-sm font-semibold bg-sky-500 hover:bg-sky-400 text-zinc-950 transition-colors flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+
+            <div id="formSuccessToast" class="hidden p-3 rounded-md bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs font-mono flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Thank you! Your message has been sent successfully.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="border-t border-zinc-800/80 py-8 text-xs font-mono text-zinc-500">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>
+        &copy; 2026 Paritosh Tiwari &bull; JECRC University, Jaipur
+      </div>
+      <a href="#hero" class="hover:text-zinc-300 transition-colors">
+        Back to top &uarr;
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
